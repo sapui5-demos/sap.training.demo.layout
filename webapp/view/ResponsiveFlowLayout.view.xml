@@ -1,0 +1,33 @@
+<mvc:View controllerName="sap.training.controller.ResponsiveFlowLayout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons">
+	<l:ResponsiveFlowLayout>
+		<l:content>
+			<l:ResponsiveFlowLayout>
+				<l:layoutData>
+					<l:ResponsiveFlowLayoutData minWidth="250"/>
+				</l:layoutData>
+				<l:content>
+					<Label labelFor="myNameField" text="Name" width="100%"/>
+					<TextField id="myNameField" value="Knecht" width="100%">
+						<layoutData>
+							<l:ResponsiveFlowLayoutData weight="2"/>
+						</layoutData>
+					</TextField>
+				</l:content>
+			</l:ResponsiveFlowLayout>
+			<l:ResponsiveFlowLayout>
+				<l:layoutData>
+					<l:ResponsiveFlowLayoutData minWidth="250"/>
+				</l:layoutData>
+				<l:content>
+					<Label labelFor="myFirstNameField" text="First Name" width="100%"/>
+					<TextField id="myFirstNameField" value="Knecht" width="100%">
+						<layoutData>
+							<l:ResponsiveFlowLayoutData weight="2"/>
+						</layoutData>
+					</TextField>
+				</l:content>
+			</l:ResponsiveFlowLayout>
+		</l:content>
+	</l:ResponsiveFlowLayout>
+</mvc:View>

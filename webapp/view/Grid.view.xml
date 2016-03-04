@@ -1,0 +1,32 @@
+<mvc:View controllerName="sap.training.controller.Grid" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons">
+	<l:Grid hSpacing="1" vSpacing="1">
+		<l:content>
+			<Label labelFor="myNameField" text="Name">
+				<layoutData>
+					<l:GridData span="L2 M4 S12"/>
+				</layoutData>
+			</Label>
+			<TextField id="myNameField" value="Knecht" width="100%">
+				<layoutData>
+					<l:GridData span="L10 M8 S12"/>
+				</layoutData>
+			</TextField>
+			<Label labelFor="myFirstNameField" text="First Name">
+				<layoutData>
+					<l:GridData span="L2 M4 S12"/>
+				</layoutData>
+			</Label>
+			<TextField id="myFirstNameField" value="Christoph" width="100%">
+				<layoutData>
+					<l:GridData span="L10 M8 S12"/>
+				</layoutData>
+			</TextField>
+			<Button text="Submit" width="100%">
+				<layoutData>
+					<l:GridData indent="M4" span="L2 M8 S12"/>
+				</layoutData>
+			</Button>
+		</l:content>
+	</l:Grid>
+</mvc:View>

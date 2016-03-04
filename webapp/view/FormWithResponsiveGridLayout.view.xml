@@ -1,0 +1,76 @@
+<mvc:View controllerName="sap.training.controller.FormWithResponsiveGridLayout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons">
+	<f:Form>
+		<f:title>
+			<core:Title text="Address Data"/>
+		</f:title>
+		<f:layout>
+			<f:ResponsiveGridLayout breakpointL="1024" breakpointM="600" columnsL="2" columnsM="1" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+				labelSpanL="4" labelSpanM="2" labelSpanS="12"/>
+		</f:layout>
+		<f:formContainers>
+			<f:FormContainer>
+				<f:title>
+					<core:Title text="Person Data"/>
+				</f:title>
+				<f:formElements>
+					<f:FormElement>
+						<f:label>
+							<Label text="Name"/>
+						</f:label>
+						<f:fields>
+							<TextField value="Christoph"/>
+							<TextField value="Knecht"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:label>
+							<Label text="Date of Birth"/>
+						</f:label>
+						<f:fields>
+							<DatePicker yyyymmdd="19700101"/>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+			<f:FormContainer>
+				<f:title>
+					<core:Title text="Company"/>
+				</f:title>
+				<f:formElements>
+					<f:FormElement>
+						<f:label>
+							<Label text="Name / Location"/>
+						</f:label>
+						<f:fields>
+							<TextField value="SAP SE"/>
+							<TextField value="69190 Walldorf"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:label>
+							<Label text="Phone"/>
+						</f:label>
+						<f:fields>
+							<TextField value="+49">
+								<layoutData>
+									<l:GridData span="L1 M2 S4"/>
+								</layoutData>
+							</TextField>
+							<TextField value="6227">
+								<layoutData>
+									<l:GridData span="L3 M3 S8"/>
+								</layoutData>
+							</TextField>
+							<TextField value="7-47474">
+								<layoutData>
+									<l:GridData span="L4 M5 S12"/>
+								</layoutData>
+							</TextField>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+		</f:formContainers>
+	</f:Form>
+</mvc:View>
