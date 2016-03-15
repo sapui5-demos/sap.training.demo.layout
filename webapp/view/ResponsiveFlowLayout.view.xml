@@ -21,7 +21,7 @@
 				</l:layoutData>
 				<l:content>
 					<Label labelFor="myFirstNameField" text="First Name" width="100%"/>
-					<TextField id="myFirstNameField" value="Knecht" width="100%">
+					<TextField id="myFirstNameField" value="Christoph" width="100%">
 						<layoutData>
 							<l:ResponsiveFlowLayoutData weight="2"/>
 						</layoutData>
