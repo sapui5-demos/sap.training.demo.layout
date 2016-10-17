@@ -1,27 +1,33 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sap.training.controller.ContentDensities"
 	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form">
-	
-	<Panel expandable="true" expanded="true" width="350px">
-		<headerToolbar>
-			<Toolbar>
+	<App>
+		<pages>
+			<Page title="Demo Content Densities">
 				<content>
-					<Text text="Person Data"/>
-					<ToolbarSpacer/>
-					<Button icon="sap-icon://save" press="onSave"/>
-					<Button icon="sap-icon://sys-cancel" press="onCancel"/>
+					<Panel expandable="true" expanded="true" width="350px">
+						<headerToolbar>
+							<Toolbar>
+								<content>
+									<Text text="Person Data"/>
+									<ToolbarSpacer/>
+									<Button icon="sap-icon://save" press="onSave"/>
+									<Button icon="sap-icon://sys-cancel" press="onCancel"/>
+								</content>
+							</Toolbar>
+						</headerToolbar>
+						<content>
+							<f:SimpleForm>
+								<f:content>
+									<Label text="Name"/>
+									<Input type="Text" value="Knecht"/>
+									<Label text="First Name"/>
+									<Input type="Text" value="Christoph"/>
+								</f:content>
+							</f:SimpleForm>
+						</content>
+					</Panel>
 				</content>
-			</Toolbar>
-		</headerToolbar>
-		<content>
-			<f:SimpleForm>
-				<f:content>
-					<Label text="Name"/>
-					<Input type="Text" value="Knecht"/>
-					<Label text="First Name"/>
-					<Input type="Text" value="Christoph"/>
-				</f:content>
-			</f:SimpleForm>
-		</content>
-	</Panel>
-	
+			</Page>
+		</pages>
+	</App>
 </mvc:View>
