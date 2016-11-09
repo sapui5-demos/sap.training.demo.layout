@@ -19,9 +19,9 @@
 							<f:SimpleForm>
 								<f:content>
 									<Label text="Name"/>
-									<Input type="Text" value="Knecht"/>
+									<Input type="Text" value="Doe"/>
 									<Label text="First Name"/>
-									<Input type="Text" value="Christoph"/>
+									<Input type="Text" value="John"/>
 								</f:content>
 							</f:SimpleForm>
 						</content>

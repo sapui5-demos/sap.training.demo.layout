@@ -1,27 +1,30 @@
-<mvc:View controllerName="sap.training.controller.Grid" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
-	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons">
+<mvc:View controllerName="sap.training.controller.Grid"
+          xmlns:html="http://www.w3.org/1999/xhtml"
+          xmlns:l="sap.ui.layout"
+	      xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	
 	<l:Grid hSpacing="1" vSpacing="1">
 		<l:content>
-			<Label labelFor="myNameField" text="Name">
+			<Label labelFor="idNameInput" text="Name">
 				<layoutData>
 					<l:GridData span="L2 M4 S12"/>
 				</layoutData>
 			</Label>
-			<TextField id="myNameField" value="Knecht" width="100%">
+			<Input id="idNameInput" value="Doe" width="100%">
 				<layoutData>
 					<l:GridData span="L10 M8 S12"/>
 				</layoutData>
-			</TextField>
-			<Label labelFor="myFirstNameField" text="First Name">
+			</Input>
+			<Label labelFor="idFirstNameInput" text="First Name">
 				<layoutData>
 					<l:GridData span="L2 M4 S12"/>
 				</layoutData>
 			</Label>
-			<TextField id="myFirstNameField" value="Christoph" width="100%">
+			<Input id="idFirstNameInput" value="John" width="100%">
 				<layoutData>
 					<l:GridData span="L10 M8 S12"/>
 				</layoutData>
-			</TextField>
+			</Input>
 			<Button text="Submit" width="100%">
 				<layoutData>
 					<l:GridData indent="M4" span="L2 M8 S12"/>
@@ -29,4 +32,13 @@
 			</Button>
 		</l:content>
 	</l:Grid>
+	
+	<l:VerticalLayout>
+		<l:content>
+			<MessageStrip id="idStandardMessage" text="Rangeset SAP_STANDARD:" type="Information" showIcon="true" />
+			<MessageStrip id="idExtendedMessage" text="Rangeset SAP_STANDARD_EXTENDED:" type="Information" showIcon="true"/>
+		</l:content>
+	</l:VerticalLayout>
+	
 </mvc:View>
+

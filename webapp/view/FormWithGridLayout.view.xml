@@ -1,5 +1,6 @@
 <mvc:View controllerName="sap.training.controller.FormWithGridLayout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
-	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons">
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	
 	<f:Form>
 		<f:title>
 			<core:Title text="Address Data"/>
@@ -21,8 +22,8 @@
 							<Label text="Name"/>
 						</f:label>
 						<f:fields>
-							<TextField value="Christoph"/>
-							<TextField value="Knecht"/>
+							<Input value="John"/>
+							<Input value="Doe"/>
 						</f:fields>
 					</f:FormElement>
 					<f:FormElement>
@@ -30,7 +31,7 @@
 							<Label text="Date of Birth"/>
 						</f:label>
 						<f:fields>
-							<DatePicker yyyymmdd="19700101"/>
+							<DatePicker value="1970-01-01"/>
 						</f:fields>
 					</f:FormElement>
 				</f:formElements>
@@ -52,40 +53,41 @@
 							</Label>
 						</f:label>
 						<f:fields>
-							<TextField value="SAP SE">
+							<Input value="SAP SE">
 								<layoutData>
 									<f:GridElementData hCells="2"/>
 								</layoutData>
-							</TextField>
-							<TextField value="69190 Walldorf">
+							</Input>
+							<Input value="69190 Walldorf">
 								<layoutData>
 									<f:GridElementData hCells="3"/>
 								</layoutData>
-							</TextField>
+							</Input>
 						</f:fields>
 					</f:FormElement>
 					<f:FormElement>
 						<f:label><Label text="Phone"/></f:label>
 						<f:fields>
-							<TextField value="+49">
+							<Input value="+49">
 								<layoutData>
 									<f:GridElementData hCells="1"/>
 								</layoutData>
-							</TextField>
-							<TextField value="6227">
+							</Input>
+							<Input value="6227">
 								<layoutData>
 									<f:GridElementData hCells="2"/>
 								</layoutData>
-							</TextField>
-							<TextField value="7-47474">
+							</Input>
+							<Input value="7-47474">
 								<layoutData>
 									<f:GridElementData hCells="2"/>
 								</layoutData>
-							</TextField>
+							</Input>
 						</f:fields>
 					</f:FormElement>
 				</f:formElements>
 			</f:FormContainer>
 		</f:formContainers>
 	</f:Form>
+	
 </mvc:View>

@@ -1,5 +1,6 @@
 <mvc:View controllerName="sap.training.controller.SimpleForm" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
-	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons">
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	
 	<f:SimpleForm breakpointL="1024" breakpointM="600" columnsL="2" columnsM="1" emptySpanL="0" emptySpanM="0" emptySpanS="0"
 		labelMinWidth="192" labelSpanL="4" labelSpanM="2" labelSpanS="12" layout="ResponsiveGridLayout" maxContainerCols="2">
 		<f:title>
@@ -8,30 +9,31 @@
 		<f:content>
 			<core:Title text="Person Data"/>
 			<Label text="Name"/>
-			<TextField value="Christoph"/>
-			<TextField value="Knecht"/>
+			<Input value="John"/>
+			<Input value="Doe"/>
 			<Label text="Date of Birth"/>
-			<DatePicker yyyymmdd="19700101"/>
+			<DatePicker value="1970-01-01"/>
 			<core:Title text="Company"/>
 			<Label text="Name / Location"/>
-			<TextField value="SAP SE"/>
-			<TextField value="69190 Walldorf"/>
+			<Input value="SAP SE"/>
+			<Input value="69190 Walldorf"/>
 			<Label text="Phone"/>
-			<TextField value="+49">
+			<Input value="+49">
 				<layoutData>
 					<l:GridData span="L1 M2 S4"/>
 				</layoutData>
-			</TextField>
-			<TextField value="6227">
+			</Input>
+			<Input value="6227">
 				<layoutData>
 					<l:GridData span="L3 M3 S8"/>
 				</layoutData>
-			</TextField>
-			<TextField value="7-47474">
+			</Input>
+			<Input value="7-47474">
 				<layoutData>
 					<l:GridData span="L4 M5 S12"/>
 				</layoutData>
-			</TextField>
+			</Input>
 		</f:content>
 	</f:SimpleForm>
+	
 </mvc:View>
