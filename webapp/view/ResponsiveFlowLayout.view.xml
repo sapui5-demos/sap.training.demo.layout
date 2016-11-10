@@ -1,9 +1,14 @@
-<mvc:View controllerName="sap.training.controller.ResponsiveFlowLayout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout"
-	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+<mvc:View controllerName="sap.training.controller.ResponsiveFlowLayout"
+          xmlns:html="http://www.w3.org/1999/xhtml"
+          xmlns:l="sap.ui.layout"
+	      xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
 	
 	<l:ResponsiveFlowLayout>
 		<l:content>
 			<l:VerticalLayout width="100%">
+				<l:layoutData>
+					<l:ResponsiveFlowLayoutData minWidth="200" margin="true"/>
+				</l:layoutData>
 				<l:content>
 					<Label labelFor="idInput" text="Name:"/>
 					<Input id="idInput" value="Doe"/>
@@ -11,7 +16,7 @@
 			</l:VerticalLayout>
 			<l:VerticalLayout width="100%">
 				<l:layoutData>
-					<l:ResponsiveFlowLayoutData minWidth="450" weight="2" margin="false"/>
+					<l:ResponsiveFlowLayoutData weight="2" margin="true"/>
 				</l:layoutData>
 				<l:content>
 					<Label labelFor="idFirstNameInput" text="First Name:"/>

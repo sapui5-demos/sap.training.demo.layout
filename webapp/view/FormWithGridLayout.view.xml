@@ -1,5 +1,7 @@
-<mvc:View controllerName="sap.training.controller.FormWithGridLayout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
-	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+<mvc:View controllerName="sap.training.controller.FormWithGridLayout"
+		  xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+		  xmlns:html="http://www.w3.org/1999/xhtml"
+		  xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
 	
 	<f:Form>
 		<f:title>
