@@ -1,14 +1,20 @@
-<mvc:View controllerName="sap.training.controller.Panel" xmlns:f="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml"
-	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+<mvc:View controllerName="sap.training.controller.Panel"
+		  xmlns:html="http://www.w3.org/1999/xhtml"
+          xmlns:f="sap.ui.layout.form" 
+		  xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
 	
-	<Panel expandable="true" expanded="true" width="350px">
+	<Panel width="350px"
+		   expandable="true"
+		   expanded="true">
 		<headerToolbar>
 			<Toolbar>
 				<content>
 					<Text text="Person Data"/>
 					<ToolbarSpacer/>
-					<Button icon="sap-icon://save" press="onSave"/>
-					<Button icon="sap-icon://sys-cancel" press="onCancel"/>
+					<Button icon="sap-icon://save"
+							press="onSave"/>
+					<Button icon="sap-icon://sys-cancel"
+							press="onCancel"/>
 				</content>
 			</Toolbar>
 		</headerToolbar>
