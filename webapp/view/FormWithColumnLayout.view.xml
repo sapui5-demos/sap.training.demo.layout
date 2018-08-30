@@ -1,0 +1,80 @@
+<mvc:View controllerName="sap.training.controller.FormWithColumnLayout" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+
+<!-- The ColumnLayout control renders a Form control in a column-based responsive way. Depending on its size, the Form control is divided into
+	one or more columns. (XL - max. 4 columns, L - max. 3 columns, M - max. 2 columns and S - 1 column.) The FormContainer elements are spread
+	out to the columns depending on the number of FormContainer elements and their size. For example, if there are 4 columns and 2 FormContainer
+	elements, each FormContainer element will use 2 columns. If there are 3 columns and 2 FormContainer elements, the larger one will use 2
+	columns, the smaller one 1 column. The size of a FormContainer element will be determined based on the number of visible FormElement
+	elements assigned to it.
+	
+	The default size of the FormContainer element can be overwritten by using ColumnContainerData as LayoutData.
+	
+	The FormElement elements are spread out to the columns of a FormContainer element arranged in a newspaper-like order. The position of the labels
+	and fields depends on the size of the used column. If there is enough space, the labels are beside the fields, otherwise above the fields.
+	The default size of a content control of a FormElement element can be overwritten using ColumnElementData as LayoutData. 
+-->
+	<f:Form editable="true">
+		<f:title>
+			<core:Title text="Address Data"/>
+		</f:title>
+		<f:layout>
+			<f:ColumnLayout columnsM="1" columnsL="2" columnsXL="2"/>
+		</f:layout>
+		<f:formContainers>
+			<f:FormContainer>
+				<f:title>
+					<core:Title text="Person Data"/>
+				</f:title>
+				<f:formElements>
+					<f:FormElement>
+						<f:label>
+							<Label text="Name"/>
+						</f:label>
+						<f:fields>
+							<Input value="John"/>
+							<Input value="Doe"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:layoutData>
+							<l:ResponsiveFlowLayoutData linebreak="true"/>
+						</f:layoutData>
+						<f:label>
+							<Label text="Date of Birth"/>
+						</f:label>
+						<f:fields>
+							<DatePicker value="1970-01-01">
+								<layoutData>
+									<l:ResponsiveFlowLayoutData weight="2"/>
+								</layoutData>
+							</DatePicker>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+			<f:FormContainer>
+				<f:title>
+					<core:Title text="Company"/>
+				</f:title>
+				<f:formElements>
+					<f:FormElement>
+						<f:label><Label text="Name / Location"/></f:label>
+						<f:fields>
+							<Input value="SAP SE, 69190 Walldorf (Germany)"/>
+						</f:fields>
+					</f:FormElement>
+					<f:FormElement>
+						<f:layoutData>
+							<l:ResponsiveFlowLayoutData linebreak="true"/>
+						</f:layoutData>
+						<f:label><Label text="Phone"/></f:label>
+						<f:fields>
+							<Input value="+49 6227 7-47474"/>
+						</f:fields>
+					</f:FormElement>
+				</f:formElements>
+			</f:FormContainer>
+		</f:formContainers>
+	</f:Form>
+</mvc:View>
